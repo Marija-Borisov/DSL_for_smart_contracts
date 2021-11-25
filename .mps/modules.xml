@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/solutions/SCs_for_Energy_Tradinng/SCs_for_Energy_Trading.msd" folder="" />
+    </projectModules>
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/DSL_for_smart_contracts.iml" filepath="$PROJECT_DIR$/.idea/DSL_for_smart_contracts.iml" />
+    </modules>
+  </component>
+</project>
