@@ -1066,7 +1066,6 @@
         </node>
       </node>
     </node>
-    <node concept="_ixoA" id="5qVL_PWqOru" role="_iOnC" />
     <node concept="2zPypq" id="7Jd17oo34S2" role="_iOnC">
       <property role="TrG5h" value="consumers" />
       <node concept="3sNe5_" id="3MFpBjBcvlS" role="2zM23F">
@@ -2996,6 +2995,20 @@
               </node>
             </node>
             <node concept="_emDc" id="zD8TH3ROPd" role="30czhm">
+              <ref role="_emDf" node="5qVL_PWLWdM" resolve="tradeEnergy" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="zD8TH3Txnj" role="1aduh9">
+            <node concept="174ZEm" id="zD8TH3TyM7" role="1QScD9">
+              <ref role="174ZEE" node="5qVL_PW_6L4" resolve="finishedBiding" />
+              <node concept="3C7svV" id="zD8TH3T$aY" role="2Yl$dn" />
+              <node concept="3iBYfx" id="zD8TH3TAW3" role="2Yl$dn">
+                <node concept="30bXRB" id="zD8TH3TCl6" role="3iBYfI">
+                  <property role="30bXRw" value="2" />
+                </node>
+              </node>
+            </node>
+            <node concept="_emDc" id="zD8TH3TvYr" role="30czhm">
               <ref role="_emDf" node="5qVL_PWLWdM" resolve="tradeEnergy" />
             </node>
           </node>
