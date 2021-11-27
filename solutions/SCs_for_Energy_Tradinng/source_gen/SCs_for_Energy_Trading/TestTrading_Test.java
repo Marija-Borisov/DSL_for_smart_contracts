@@ -47,8 +47,12 @@ public class TestTrading_Test extends BaseTransformationTest {
     new TestBody(this).TestTrading_item3_5689510388083765798();
   }
   @Test
-  public void TestTrading_item4_5689510388083839206() throws Throwable {
-    new TestBody(this).TestTrading_item4_5689510388083839206();
+  public void TestTrading_item4_642083571642588413() throws Throwable {
+    new TestBody(this).TestTrading_item4_642083571642588413();
+  }
+  @Test
+  public void TestTrading_item5_5689510388083839206() throws Throwable {
+    new TestBody(this).TestTrading_item5_5689510388083839206();
   }
 
 
@@ -71,7 +75,11 @@ public class TestTrading_Test extends BaseTransformationTest {
       SNode ti = SNodeOperations.cast(getRealNodeById("5689510388083765798"), CONCEPTS.AbstractTestItem$9u);
       TestRunner.doExecuteTest(ti);
     }
-    public void TestTrading_item4_5689510388083839206() throws Exception {
+    public void TestTrading_item4_642083571642588413() throws Exception {
+      SNode ti = SNodeOperations.cast(getRealNodeById("642083571642588413"), CONCEPTS.AbstractTestItem$9u);
+      TestRunner.doExecuteTest(ti);
+    }
+    public void TestTrading_item5_5689510388083839206() throws Exception {
       SNode ti = SNodeOperations.cast(getRealNodeById("5689510388083839206"), CONCEPTS.AbstractTestItem$9u);
       TestRunner.doExecuteTest(ti);
     }

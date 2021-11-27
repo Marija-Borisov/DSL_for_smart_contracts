@@ -2,140 +2,28 @@
 <model ref="r:14b63796-e2a7-4c37-880c-9c969e9d77d7(SCs_for_Energy_Trading)">
   <persistence version="9" />
   <languages>
-    <use id="64e79176-30a1-4836-821c-bf62ff6c6091" name="org.iets3.core.expr.natlang" version="0" />
-    <use id="50b470e7-14ad-46c3-b540-4586f56d2e9c" name="org.iets3.core.expr.process" version="0" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
-    <use id="8bb1251e-eae5-47ab-9843-33adfae8edaa" name="org.iets3.core.expr.util" version="2" />
-    <use id="8e4e17de-bc10-4a34-a376-a243fbde540e" name="org.iets3.glossary" version="0" />
-    <use id="7d21cc4b-4c24-41db-9868-8af4a7f3eba9" name="org.iets3.core.trace" version="0" />
-    <use id="10e056b2-49fd-40ca-8b64-de69c81163ac" name="org.iets3.core.expr.query" version="0" />
-    <use id="18001c94-33a7-4f68-a7c1-ffddc4b39be1" name="org.iets3.core.expr.repl" version="0" />
     <use id="cd87ddab-6434-448e-a011-1e1c898de18e" name="org.iets3.core.expr.statemachines" version="0" />
     <use id="f3eafff0-30d2-46d6-9150-f0f3b880ce27" name="org.iets3.core.expr.path" version="0" />
-    <use id="711a16d7-99e8-4e1d-b20c-99c0b7309cd8" name="org.iets3.core.expr.metafunction" version="0" />
-    <use id="f95247f1-a285-4e98-864f-7f4b1723a807" name="org.iets3.core.users" version="0" />
-    <use id="9d000fbd-bdca-4a46-b39b-c5ba9e79b38c" name="org.iets3.opensource.build.gentests" version="0" />
-    <use id="2c8e8304-72f7-4e6a-853a-ac0616a47569" name="org.iets3.core.expr.typetags.lib" version="0" />
     <use id="fbba5118-5fc6-49ff-9c3b-0b4469830440" name="org.iets3.core.expr.mutable" version="1" />
-    <use id="63c1aad1-e2db-439c-a30a-02b5e0bc80f3" name="org.iets3.core.expr.tracing" version="0" />
-    <use id="cb91a38e-738a-4811-a96d-448d08f526fa" name="org.iets3.core.expr.typetags.units" version="1" />
-    <use id="be679007-4312-4db1-9ac0-ab7dfbe66a74" name="org.iets3.core.expr.typetags.units.quantity" version="0" />
-    <use id="6fadc44e-69c2-4a4a-9d16-7ebf5f8d3ba0" name="org.iets3.core.expr.math" version="0" />
-    <use id="553a35c5-ccd6-40ba-9923-5e3b354d0c76" name="org.iets3.core.expr.messages" version="0" />
-    <use id="5186c6ce-428c-4f09-a9df-73d9e86c27d3" name="org.iets3.core.expr.typetags" version="0" />
     <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="4" />
-    <use id="2022a471-10ba-4431-ba5d-622df898f3c6" name="org.iets3.core.expr.testExecution" version="0" />
-    <use id="a3c6f642-41b7-44cb-951b-463b8427a245" name="org.iets3.req.core" version="0" />
     <use id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests" version="1" />
-    <use id="4621d3e3-b8a3-4bbe-b7ac-234b6e2d1d68" name="org.iets3.core.expr.temporal" version="0" />
-    <use id="7bcf9284-ca29-484f-a3b3-2855bdd813ad" name="org.iets3.core.expr.simpleTypes.tests" version="0" />
-    <devkit ref="364dc291-5d9e-42d9-be31-62f6dec26162(com.mbeddr.analyses.acsl.cbmc)" />
-    <devkit ref="e79cff4c-e3e9-4626-9aca-bcc76320fb14(com.mbeddr.analyses.acsl.spec)" />
     <devkit ref="315c0ec2-38ff-4e9c-9d15-fd0848b5f062(com.mbeddr.analyses.components)" />
     <devkit ref="0ca77142-1eea-4b14-b369-69bdaa1c44fb(com.mbeddr.analyses.core)" />
-    <devkit ref="0d9470ba-d59f-4411-a2ce-12f6b6bdec49(com.mbeddr.analyses.fm)" />
-    <devkit ref="de90e2e8-f051-4d49-9025-394f94f968b8(com.mbeddr.analyses.promela)" />
     <devkit ref="537c2fcd-71ef-4c92-a9e5-27af92b5182b(com.mbeddr.analyses.spin.mdcc)" />
-    <devkit ref="74a1428c-a8b1-49f6-8abb-f4008cf591e6(com.mbeddr.analyses.statemachines)" />
     <devkit ref="a4dac888-0788-4852-b4c0-f386bf6f2c0b(com.mbeddr.cc.reqtrace)" />
-    <devkit ref="8a4402f1-8f1e-44d8-a4f6-f174fa7cf42e(com.mbeddr.cc.reqtrace.c)" />
-    <devkit ref="b31efd26-898e-4b0e-b5dc-2d7ced06e7f7(com.mbeddr.cc.variability)" />
-    <devkit ref="053020df-6ec1-4889-9f23-34fad076140d(com.mbeddr.commenting)" />
     <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
-    <devkit ref="aa72fbcf-7e79-465b-a4d9-4517ef4624ee(com.mbeddr.concurrency)" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="87468ddd-5b04-4352-a61d-70ff981afab6(com.mbeddr.debugger-testing)" />
-    <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
     <devkit ref="bad61089-aa44-4252-8f72-63f3375f5e64(com.mbeddr.math)" />
-    <devkit ref="1ca21c70-6e61-4b62-8771-dfd96620ef7c(com.mbeddr.mpsutil.guides)" />
-    <devkit ref="1a986be1-0ef0-4f9f-9d8a-81c3ea7227ae(com.mbeddr.physicalunits)" />
-    <devkit ref="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
     <devkit ref="2f7ba914-eed9-41bf-b0ae-6633a04a3894(com.mbeddr.statemachinesInComponents)" />
     <devkit ref="cd0acf69-f314-47a5-88c9-372e5cd40dff(org.iets3.req)" />
     <devkit ref="b2a65b84-7ec9-404f-8602-f16394bb1d98(org.iets3.core.expr.stateful.devkit)" />
   </languages>
-  <imports>
-    <import index="9ltq" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.ide.editorTabs.tabfactory(MPS.Workbench/)" />
-    <import index="gl80" ref="r:b8720f64-e52a-4351-9b7f-489963d6cfdc(org.iets3.components.req.editor)" />
-    <import index="pr76" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.editor.toolbar.floating(MPS.IDEA/)" />
-    <import index="u02k" ref="r:d7313444-c0c4-49ce-a33f-924d6b925b1b(com.mbeddr.core.debug.test.runtime.m1)" />
-    <import index="sf4k" ref="r:c07349ad-48c5-45c4-a238-c8737c1d5f8e(org.iets3.components.req.structure)" />
-    <import index="x7tk" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.externalSystem.service.task.ui(MPS.IDEA/)" />
-    <import index="2vci" ref="r:1f9c504f-7e80-4694-ba90-80ed6336d504(com.mbeddr.mpsutil.editingGuide.runtime.rt)" />
-    <import index="m4b8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.execution.target.value(MPS.IDEA/)" />
-    <import index="ich0" ref="r:2c56c15d-9645-459e-8807-414df4bb772a(org.iets3.analysis.base.typesystem)" />
-    <import index="jgl2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.execution.testframework.export(MPS.IDEA/)" />
-    <import index="hnhi" ref="r:d354209e-0bea-497f-b905-d66f72900fa8(org.iets3.analysis.base.plugin)" />
-    <import index="275i" ref="r:67a2a1cf-c4ce-4197-99a0-fcff82f5bf11(org.iets3.components.req.typesystem)" />
-    <import index="awep" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.externalSystem.task(MPS.IDEA/)" />
-    <import index="amgm" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.externalSystem.model.task(MPS.IDEA/)" />
-    <import index="ywkm" ref="r:8e7e3b0c-cd10-406a-8ea9-1757f9338557(org.iets3.components.plugin.plugin)" />
-    <import index="wkyy" ref="r:98e8e87d-bc81-4b1b-a725-d32cf5f50360(org.iets3.analysis.base.migration)" />
-    <import index="3we" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.execution.testDiscovery(MPS.IDEA/)" />
-    <import index="ux5g" ref="r:d14aa5da-e95e-41fe-be25-488c35fd65fc(org.iets3.components.core.migration)" />
-    <import index="7e48" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.execution.dashboard.tree(MPS.IDEA/)" />
-    <import index="yiza" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.execution.testframework.ui(MPS.IDEA/)" />
-    <import index="ly12" ref="r:3cecc670-c5e6-4794-af17-a5638180af01(org.iets3.components.core.interpreter.plugin)" />
-    <import index="ssxb" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.execution.wsl.target.proxy(MPS.IDEA/)" />
-    <import index="oq9k" ref="371850a9-2c5b-4e1d-a811-70d97e847917/r:f4ae6487-fb1d-418f-8dd3-759f9604156f(com.mbeddr.mpsutil.editor.utils/com.mbeddr.mpsutil.editor.utils.runtime)" />
-    <import index="bzwl" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.ide.editor.tabs(MPS.Workbench/)" />
-    <import index="aku0" ref="r:04f1cb74-fc0c-4bf2-94b8-b7470b9d8339(org.iets3.components.core.editor)" />
-    <import index="djvy" ref="r:958ba0e0-7647-4e09-b109-afc6108abac1(org.iets3.components.core.actions)" />
-    <import index="8eng" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.execution.testframework(MPS.IDEA/)" />
-    <import index="u9lu" ref="r:978553a1-f02c-4c84-a5ee-ce22e342a425(org.iets3.components.core.intentions)" />
-    <import index="q8rj" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.execution.target.java(MPS.IDEA/)" />
-    <import index="8ry9" ref="r:2030a860-44ce-4086-9ae5-5641e63d6e26(com.mbeddr.ext.statemachines.refactorings)" />
-    <import index="swzp" ref="r:fe226ce1-cabf-4bdb-bf6e-b59b745d80a4(org.iets3.core.assessment.typesystem)" />
-    <import index="tdhm" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.execution.wsl.target.wizard(MPS.IDEA/)" />
-    <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" />
-    <import index="gkt" ref="r:f29b6853-4e1d-40bc-a331-9233266a6f31(com.mbeddr.ext.units.runtime.plugin)" />
-    <import index="4az4" ref="r:d5e9e54b-cab2-4bc4-800f-1952f775974d(org.iets3.analysis.base.editor)" />
-    <import index="mvpv" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.editor.textarea(MPS.IDEA/)" />
-    <import index="iq8l" ref="r:ffb23717-2675-4f36-b47c-a7d3b95c99a7(com.mbeddr.core.expressions.runtime.plugin)" />
-    <import index="heb5" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.externalSystem.action.task(MPS.IDEA/)" />
-    <import index="w9y2" ref="r:b3786745-c763-4a49-a754-f84e15236f18(org.iets3.components.core.structure)" />
-    <import index="qs9k" ref="r:4f316eec-6fb7-47d8-b0d7-03d93d7f7f75(org.iets3.components.req.constraints)" />
-    <import index="1jcu" ref="r:729fa0c7-b4e4-42b1-acfe-71017c020a49(org.iets3.analysis.base.behavior)" />
-    <import index="iwsd" ref="r:f56842b7-2ba9-4137-b621-758b6524e976(org.iets3.analysis.base.constraints)" />
-    <import index="bo0q" ref="r:a9d6b037-1504-40b0-9d90-6aed1da43430(org.iets3.components.core.constraints)" />
-    <import index="kwd0" ref="r:fb5faa3c-b450-480e-b539-deae2c5f7c48(org.iets3.core.assessment.behavior)" />
-    <import index="qs41" ref="r:406eaf3b-4b50-4952-9b52-cbae48820416(com.mbeddr.analyses.spin.documentation.mdcc_documentation_examples_robustness)" />
-    <import index="lj9d" ref="r:5c5110b9-a097-4646-ab0b-d085c4441ebb(org.iets3.components.req.behavior)" />
-    <import index="qwe8" ref="r:5f02508f-faba-491c-88f2-fa0e4a006e1d(com.mbeddr.core.debug.blext.runtime.main)" />
-    <import index="5etr" ref="r:769eaa92-d4cb-4fa9-87e4-269f7f35a1eb(org.iets3.components.core.typesystem)" />
-    <import index="q9fk" ref="r:07722043-5005-470c-8888-a00b4af2a204(org.iets3.analysis.base.intentions)" />
-    <import index="d2zl" ref="94b17d5e-87d9-4868-8101-157e83e33243/r:88465183-d595-48bc-8650-6e4d36344e13(com.mbeddr.mpsutil.editor.querylist.runtime/com.mbeddr.mpsutil.editor.querylist.runtime)" />
-    <import index="bu66" ref="r:6cac2360-e204-4081-891f-7db5759e7f2a(org.iets3.core.assessment.plugin)" />
-    <import index="ft5u" ref="r:74a059b2-01a6-4e08-ad37-56669b8924be(com.mbeddr.mpsutil.coverage.emma.rt.coverage)" />
-    <import index="jbiz" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.codeInsight.template.emmet.tokens(MPS.IDEA/)" />
-    <import index="2lr9" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.ide.editorTabs(MPS.Workbench/)" />
-    <import index="owdv" ref="r:e11851f4-fdf5-44c6-8f89-87ff654ce43e(com.mbeddr.core.expressions.refactorings)" />
-    <import index="jxrj" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.execution.wsl.target(MPS.IDEA/)" />
-    <import index="dh1d" ref="r:d038ffd1-504f-49e3-a1bf-86cfe697917c(com.mbeddr.mpsutil.coverage.emma.rt.sandbox)" />
-    <import index="56ml" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.execution.testDiscovery.actions(MPS.IDEA/)" />
-    <import index="s86v" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.execution.testDiscovery.indices(MPS.IDEA/)" />
-    <import index="yt5d" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.execution.target(MPS.IDEA/)" />
-    <import index="31cy" ref="r:82561228-eb33-4f53-8817-bdef7638b336(com.mbeddr.ext.concurrency.plainC.runtime)" />
-    <import index="jxy0" ref="r:8e857b0d-9257-4141-8e2f-d4cb950b0f1f(org.iets3.core.assessment.editor)" />
-    <import index="4bcl" ref="r:c3f8c118-0b96-42c8-81d3-9acdb23cdc68(org.iets3.components.core.plugin)" />
-    <import index="4w6j" ref="r:f5af6394-9f2e-4d63-b896-1048da085254(com.mbeddr.mpsutil.coverage.emma.rt.plugin)" />
-    <import index="330h" ref="r:23d7e401-548b-485c-bdf1-c060e259073c(org.iets3.core.assessment.structure)" />
-    <import index="o0il" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide.errorTreeView(MPS.IDEA/)" />
-    <import index="cx1q" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.execution.target.local(MPS.IDEA/)" />
-    <import index="r2u9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide.ui.experimental.toolbar(MPS.IDEA/)" />
-    <import index="f3z6" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.externalSystem.model.task.event(MPS.IDEA/)" />
-    <import index="8pth" ref="r:a0f3e73a-4962-47f7-b243-688c1b1ed3f4(org.iets3.core.assessment.constraints)" />
-    <import index="fnn" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.execution.testframework.autotest(MPS.IDEA/)" />
-    <import index="p76z" ref="r:62e76a73-7fd3-4d03-9b49-0da2a82f5479(com.mbeddr.mpsutil.ecore.testing.runtime.main)" />
-    <import index="lwu4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.vfs.ex.temp(MPS.IDEA/)" />
-    <import index="3eba" ref="r:be0c7a50-96d7-41ce-8522-0a6d4431fcc5(org.iets3.components.core.behavior)" />
-    <import index="avcr" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.execution.testframework.actions(MPS.IDEA/)" />
-    <import index="rpb" ref="r:1764e886-bde7-4513-8b69-527af62b45d0(com.mbeddr.mpsutil.ecoreimporter.runtime.importerruntime)" />
-  </imports>
+  <imports />
   <registry>
     <language id="cd87ddab-6434-448e-a011-1e1c898de18e" name="org.iets3.core.expr.statemachines">
       <concept id="411710798109576786" name="org.iets3.core.expr.statemachines.structure.SMFunAdapter" flags="ng" index="qdjUo" />
-      <concept id="411710798109084890" name="org.iets3.core.expr.statemachines.structure.EmptyStateContent" flags="ng" index="qMFKg" />
       <concept id="3519191162854281550" name="org.iets3.core.expr.statemachines.structure.IsInStateTarget" flags="ng" index="2AijNT">
         <reference id="3519191162854281557" name="state" index="2AijNy" />
       </concept>
@@ -253,6 +141,7 @@
       <concept id="5115872837156761033" name="org.iets3.core.expr.base.structure.EqualsExpression" flags="ng" index="30cPrO" />
       <concept id="5115872837156687889" name="org.iets3.core.expr.base.structure.GreaterEqualsExpression" flags="ng" index="30d6GG" />
       <concept id="5115872837156687891" name="org.iets3.core.expr.base.structure.LessEqualsExpression" flags="ng" index="30d6GI" />
+      <concept id="5115872837156687890" name="org.iets3.core.expr.base.structure.LessExpression" flags="ng" index="30d6GJ" />
       <concept id="5115872837156687764" name="org.iets3.core.expr.base.structure.GreaterExpression" flags="ng" index="30d7iD" />
       <concept id="5115872837156724025" name="org.iets3.core.expr.base.structure.LogicalAndExpression" flags="ng" index="30deo4" />
       <concept id="5115872837156723899" name="org.iets3.core.expr.base.structure.LogicalOrExpression" flags="ng" index="30deu6" />
@@ -1331,6 +1220,17 @@
           </node>
         </node>
       </node>
+      <node concept="2Ylqqx" id="zD8TH3QgW4" role="17tHGx">
+        <property role="TrG5h" value="processed" />
+        <node concept="15qgo_" id="zD8TH3QjkV" role="2YhqaW">
+          <node concept="3sNe5_" id="zD8TH3Qjll" role="15qgo$">
+            <node concept="2vmvy5" id="zD8TH3QjlW" role="3sNe5$" />
+          </node>
+        </node>
+        <node concept="3sNe5_" id="zD8TH3QjjC" role="2S399n">
+          <node concept="2vmvy5" id="zD8TH3Qjkc" role="3sNe5$" />
+        </node>
+      </node>
       <node concept="174hPg" id="5qVL_PW_6L4" role="17tHGx">
         <property role="TrG5h" value="finishedBiding" />
         <node concept="2YrC_o" id="5qVL_PW_7sL" role="2YrC_u">
@@ -2234,6 +2134,14 @@
                 <node concept="3NG6h4" id="4VPcSQV4D30" role="1QScD9">
                   <node concept="3izI60" id="4VPcSQV4D31" role="3iAY4F">
                     <node concept="1aduha" id="4VPcSQV4Gr4" role="3izI61">
+                      <node concept="1QScDb" id="zD8TH3Q5Ek" role="1aduh9">
+                        <node concept="3sPC8h" id="zD8TH3Q7Sp" role="1QScD9">
+                          <node concept="2vmpnb" id="zD8TH3Qa8p" role="3sPC8l" />
+                        </node>
+                        <node concept="2YgRg0" id="zD8TH3QlAa" role="30czhm">
+                          <ref role="2YgRg3" node="zD8TH3QgW4" resolve="processed" />
+                        </node>
+                      </node>
                       <node concept="1adJid" id="4VPcSQVgO2B" role="1aduh9">
                         <property role="TrG5h" value="temp" />
                         <node concept="1QScDb" id="4VPcSQVgUQC" role="1adJii">
@@ -2354,7 +2262,53 @@
             <ref role="1vQcaS" node="5qVL_PWydlV" resolve="finishedTrading" />
           </node>
         </node>
-        <node concept="qMFKg" id="4VPcSQV1j3X" role="17rfIJ" />
+        <node concept="1vZJXP" id="zD8TH3N$qz" role="17rfIJ">
+          <node concept="17sVkC" id="zD8TH3N$q$" role="174hPE">
+            <node concept="30deo4" id="zD8TH3Qcl8" role="17sVkD">
+              <node concept="1QScDb" id="zD8TH3QshO" role="30dEs_">
+                <node concept="3sQ2Ir" id="zD8TH3QuvP" role="1QScD9" />
+                <node concept="2YgRg0" id="zD8TH3QnMl" role="30czhm">
+                  <ref role="2YgRg3" node="zD8TH3QgW4" resolve="processed" />
+                </node>
+              </node>
+              <node concept="1QScDb" id="zD8TH3NEXJ" role="30dEsF">
+                <node concept="2Tz0gS" id="zD8TH3NJmP" role="1QScD9">
+                  <node concept="3izI60" id="zD8TH3NJmQ" role="3iAY4F">
+                    <node concept="30deo4" id="zD8TH3OJFm" role="3izI61">
+                      <node concept="30cPrO" id="zD8TH3OJFn" role="30dEsF">
+                        <node concept="1QScDb" id="zD8TH3OJFo" role="30dEsF">
+                          <node concept="3izPEI" id="zD8TH3NJmS" role="30czhm" />
+                          <node concept="3o_JK" id="zD8TH3NNFs" role="1QScD9">
+                            <ref role="3o_JH" node="3lQITeQmqsi" resolve="sold" />
+                          </node>
+                        </node>
+                        <node concept="2vmpn$" id="zD8TH3NS59" role="30dEs_" />
+                      </node>
+                      <node concept="30d6GJ" id="zD8TH3OSEC" role="30dEs_">
+                        <node concept="3C7svV" id="zD8TH3OUWv" role="30dEs_" />
+                        <node concept="1QScDb" id="zD8TH3OOaw" role="30dEsF">
+                          <node concept="3o_JK" id="zD8TH3OQpS" role="1QScD9">
+                            <ref role="3o_JH" node="34d0X31G9gw" resolve="expiration" />
+                          </node>
+                          <node concept="3izPEI" id="zD8TH3OLXm" role="30czhm" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1QScDb" id="zD8TH3NAB_" role="30czhm">
+                  <node concept="3sQ2Ir" id="zD8TH3NCL1" role="1QScD9" />
+                  <node concept="_emDc" id="zD8TH3NAAO" role="30czhm">
+                    <ref role="_emDf" node="3lQITeQntr6" resolve="offers" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1vQcaV" id="zD8TH3NWsD" role="1vQNHF">
+            <ref role="1vQcaS" node="5qVL_PWMEDI" resolve="bids" />
+          </node>
+        </node>
       </node>
       <node concept="17qw2z" id="4VPcSQV1heZ" role="17tHGx" />
       <node concept="174hPt" id="5qVL_PWydlV" role="17tHGx">
@@ -2911,6 +2865,162 @@
           <node concept="_emDc" id="4VPcSQVCb9p" role="1aduh9">
             <ref role="_emDf" node="3lQITeQntr6" resolve="offers" />
             <node concept="29jrl$" id="4VPcSQVCb9q" role="lGtFl" />
+          </node>
+        </node>
+      </node>
+      <node concept="2F9BGE" id="zD8TH3RHNX" role="_fkp5">
+        <node concept="1aduha" id="zD8TH3RHQB" role="_fkuZ">
+          <node concept="1QScDb" id="zD8TH3RHQC" role="1aduh9">
+            <node concept="3sPC8h" id="zD8TH3RHQD" role="1QScD9">
+              <node concept="_emDc" id="zD8TH3RHQE" role="3sPC8l">
+                <ref role="_emDf" node="5qVL_PWyIrc" resolve="consumers" />
+              </node>
+            </node>
+            <node concept="_emDc" id="zD8TH3RHQF" role="30czhm">
+              <ref role="_emDf" node="7Jd17oo34S2" resolve="consumers" />
+            </node>
+          </node>
+          <node concept="1af_rf" id="zD8TH3RHQG" role="1aduh9">
+            <property role="0Rz4W" value="-498919331" />
+            <ref role="1afhQb" node="3lQITeQtUD$" resolve="isConsumer" />
+            <node concept="30bXRB" id="zD8TH3RHQH" role="1afhQ5">
+              <property role="30bXRw" value="1" />
+            </node>
+            <node concept="29jrl$" id="zD8TH3RHQI" role="lGtFl" />
+          </node>
+          <node concept="1QScDb" id="zD8TH3RHQJ" role="1aduh9">
+            <node concept="3sPC8h" id="zD8TH3RHQK" role="1QScD9">
+              <node concept="_emDc" id="zD8TH3RHQL" role="3sPC8l">
+                <ref role="_emDf" node="5qVL_PWyJSR" resolve="prosumers" />
+              </node>
+            </node>
+            <node concept="_emDc" id="zD8TH3RHQM" role="30czhm">
+              <ref role="_emDf" node="7Jd17oo34S3" resolve="prosumers" />
+            </node>
+          </node>
+          <node concept="1af_rf" id="zD8TH3RHQN" role="1aduh9">
+            <property role="0Rz4W" value="2095018611" />
+            <ref role="1afhQb" node="3lQITeQvj$T" resolve="isProsumer" />
+            <node concept="30bXRB" id="zD8TH3RHQO" role="1afhQ5">
+              <property role="30bXRw" value="3" />
+            </node>
+            <node concept="29jrl$" id="zD8TH3RHQP" role="lGtFl" />
+          </node>
+          <node concept="1QScDb" id="zD8TH3RHQQ" role="1aduh9">
+            <node concept="3sPC8h" id="zD8TH3RHQR" role="1QScD9">
+              <node concept="_emDc" id="zD8TH3RHQS" role="3sPC8l">
+                <ref role="_emDf" node="5qVL_PWyLfp" resolve="offers" />
+              </node>
+            </node>
+            <node concept="_emDc" id="zD8TH3RHQT" role="30czhm">
+              <ref role="_emDf" node="3lQITeQntr6" resolve="offers" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="zD8TH3RHQU" role="1aduh9">
+            <node concept="_emDc" id="zD8TH3RHQV" role="30czhm">
+              <ref role="_emDf" node="5qVL_PWLWdM" resolve="tradeEnergy" />
+            </node>
+            <node concept="174ZEm" id="zD8TH3RHQW" role="1QScD9">
+              <ref role="174ZEE" node="5qVL_PWMH_0" resolve="biding" />
+              <node concept="30bXRB" id="zD8TH3RHQX" role="2Yl$dn">
+                <property role="30bXRw" value="1" />
+              </node>
+              <node concept="30bXRB" id="zD8TH3RHQY" role="2Yl$dn">
+                <property role="30bXRw" value="15" />
+              </node>
+              <node concept="30bXRB" id="zD8TH3RHQZ" role="2Yl$dn">
+                <property role="30bXRw" value="1" />
+              </node>
+              <node concept="_emDc" id="zD8TH3RHR0" role="2Yl$dn">
+                <ref role="_emDf" node="4VPcSQUXypu" resolve="timestamp_1" />
+              </node>
+            </node>
+          </node>
+          <node concept="1QScDb" id="zD8TH3RHR1" role="1aduh9">
+            <node concept="174ZEm" id="zD8TH3RHR2" role="1QScD9">
+              <ref role="174ZEE" node="5qVL_PWMH_0" resolve="biding" />
+              <node concept="30bXRB" id="zD8TH3RHR3" role="2Yl$dn">
+                <property role="30bXRw" value="2" />
+              </node>
+              <node concept="30bXRB" id="zD8TH3RHR4" role="2Yl$dn">
+                <property role="30bXRw" value="15" />
+              </node>
+              <node concept="30bXRB" id="zD8TH3RHR5" role="2Yl$dn">
+                <property role="30bXRw" value="2" />
+              </node>
+              <node concept="_emDc" id="zD8TH3RHR6" role="2Yl$dn">
+                <ref role="_emDf" node="4VPcSQUXypu" resolve="timestamp_1" />
+              </node>
+            </node>
+            <node concept="_emDc" id="zD8TH3RHR7" role="30czhm">
+              <ref role="_emDf" node="5qVL_PWLWdM" resolve="tradeEnergy" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="zD8TH3RHR8" role="1aduh9">
+            <node concept="174ZEm" id="zD8TH3RHR9" role="1QScD9">
+              <ref role="174ZEE" node="5qVL_PW_6L4" resolve="finishedBiding" />
+              <node concept="3C7svV" id="zD8TH3RHRa" role="2Yl$dn" />
+              <node concept="3iBYfx" id="zD8TH3RHRb" role="2Yl$dn">
+                <node concept="30bXRB" id="zD8TH3RHRc" role="3iBYfI">
+                  <property role="30bXRw" value="1" />
+                </node>
+              </node>
+            </node>
+            <node concept="_emDc" id="zD8TH3RHRd" role="30czhm">
+              <ref role="_emDf" node="5qVL_PWLWdM" resolve="tradeEnergy" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="zD8TH3RHRe" role="1aduh9">
+            <node concept="174ZEm" id="zD8TH3RHRf" role="1QScD9">
+              <ref role="174ZEE" node="5qVL_PWrDly" resolve="buyEnergy" />
+            </node>
+            <node concept="_emDc" id="zD8TH3RHRg" role="30czhm">
+              <ref role="_emDf" node="5qVL_PWLWdM" resolve="tradeEnergy" />
+            </node>
+            <node concept="29jrl$" id="zD8TH3RHRh" role="lGtFl" />
+          </node>
+          <node concept="1QScDb" id="zD8TH3RQcb" role="1aduh9">
+            <node concept="174ZEm" id="zD8TH3RR_C" role="1QScD9">
+              <ref role="174ZEE" node="5qVL_PWMH_0" resolve="biding" />
+              <node concept="30bXRB" id="zD8TH3RSW8" role="2Yl$dn">
+                <property role="30bXRw" value="2" />
+              </node>
+              <node concept="30bXRB" id="zD8TH3RVCQ" role="2Yl$dn">
+                <property role="30bXRw" value="20" />
+              </node>
+              <node concept="30bXRB" id="zD8TH3RYmm" role="2Yl$dn">
+                <property role="30bXRw" value="2" />
+              </node>
+              <node concept="_emDc" id="zD8TH3S14t" role="2Yl$dn">
+                <ref role="_emDf" node="4VPcSQUXypu" resolve="timestamp_1" />
+              </node>
+            </node>
+            <node concept="_emDc" id="zD8TH3ROPd" role="30czhm">
+              <ref role="_emDf" node="5qVL_PWLWdM" resolve="tradeEnergy" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="zD8TH3S5ev" role="1aduh9">
+            <node concept="174ZEm" id="zD8TH3S6DE" role="1QScD9">
+              <ref role="174ZEE" node="5qVL_PWrDly" resolve="buyEnergy" />
+            </node>
+            <node concept="_emDc" id="zD8TH3S3PN" role="30czhm">
+              <ref role="_emDf" node="5qVL_PWLWdM" resolve="tradeEnergy" />
+            </node>
+          </node>
+          <node concept="_emDc" id="zD8TH3RHRi" role="1aduh9">
+            <ref role="_emDf" node="5qVL_PWLWdM" resolve="tradeEnergy" />
+            <node concept="29jrl$" id="zD8TH3RHRj" role="lGtFl" />
+          </node>
+          <node concept="3C7svV" id="zD8TH3RHRk" role="1aduh9">
+            <node concept="29jrl$" id="zD8TH3RHRl" role="lGtFl" />
+          </node>
+          <node concept="_emDc" id="zD8TH3RHRm" role="1aduh9">
+            <ref role="_emDf" node="3lQITeQpuTD" resolve="sales" />
+            <node concept="29jrl$" id="zD8TH3RHRn" role="lGtFl" />
+          </node>
+          <node concept="_emDc" id="zD8TH3RHRo" role="1aduh9">
+            <ref role="_emDf" node="3lQITeQntr6" resolve="offers" />
+            <node concept="29jrl$" id="zD8TH3RHRp" role="lGtFl" />
           </node>
         </node>
       </node>
