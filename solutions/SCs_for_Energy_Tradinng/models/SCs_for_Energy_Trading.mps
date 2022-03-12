@@ -142,7 +142,6 @@
       </concept>
       <concept id="5115872837156802410" name="org.iets3.core.expr.base.structure.LogicalNotExpression" flags="ng" index="30czhn" />
       <concept id="5115872837156761033" name="org.iets3.core.expr.base.structure.EqualsExpression" flags="ng" index="30cPrO" />
-      <concept id="5115872837156687889" name="org.iets3.core.expr.base.structure.GreaterEqualsExpression" flags="ng" index="30d6GG" />
       <concept id="5115872837156687891" name="org.iets3.core.expr.base.structure.LessEqualsExpression" flags="ng" index="30d6GI" />
       <concept id="5115872837156687890" name="org.iets3.core.expr.base.structure.LessExpression" flags="ng" index="30d6GJ" />
       <concept id="5115872837156687764" name="org.iets3.core.expr.base.structure.GreaterExpression" flags="ng" index="30d7iD" />
@@ -263,6 +262,9 @@
       </concept>
     </language>
     <language id="fbba5118-5fc6-49ff-9c3b-0b4469830440" name="org.iets3.core.expr.mutable">
+      <concept id="1136100386040134757" name="org.iets3.core.expr.mutable.structure.InteractorValueTarget" flags="ng" index="GRK4H">
+        <property id="9163496876327186602" name="value" index="2EMntL" />
+      </concept>
       <concept id="4255172619715417408" name="org.iets3.core.expr.mutable.structure.UpdateItExpression" flags="ng" index="3j5BQN" />
       <concept id="4255172619715926288" name="org.iets3.core.expr.mutable.structure.NewTxBlock" flags="ng" index="3jbV7z">
         <child id="4255172619715926289" name="body" index="3jbV7y" />
@@ -285,6 +287,9 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="779128492853369165" name="jetbrains.mps.lang.core.structure.SideTransformInfo" flags="ng" index="1KehLL">
+        <property id="779128492853934523" name="cellId" index="1K8rM7" />
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
@@ -337,7 +342,7 @@
   <node concept="_iOnV" id="5qVL_PWoyQD">
     <property role="TrG5h" value="Core_Functions" />
     <node concept="1aga60" id="7Jd17oo358q" role="_iOnC">
-      <property role="TrG5h" value="payTo" />
+      <property role="TrG5h" value="transferTo" />
       <property role="1HeIcW" value="true" />
       <node concept="1QScDb" id="7Jd17oo358H" role="1ahQXP">
         <node concept="3sPC8h" id="7Jd17oo359b" role="1QScD9">
@@ -353,12 +358,12 @@
             <ref role="3o_JH" node="7Jd17oo34S9" resolve="balance" />
           </node>
           <node concept="1afdae" id="7Jd17oo359F" role="30czhm">
-            <ref role="1afue_" node="7Jd17oo358I" resolve="acct" />
+            <ref role="1afue_" node="7Jd17oo358I" resolve="account" />
           </node>
         </node>
       </node>
       <node concept="1ahQXy" id="7Jd17oo358I" role="1ahQWs">
-        <property role="TrG5h" value="acct" />
+        <property role="TrG5h" value="account" />
         <node concept="2Ss9cW" id="7Jd17oo359d" role="3ix9CU">
           <ref role="2Ss9cX" node="7Jd17oo34RG" resolve="Account" />
         </node>
@@ -372,7 +377,7 @@
       <node concept="2lgajY" id="7Jd17oo358K" role="28QfE6" />
     </node>
     <node concept="1aga60" id="7Jd17oo358r" role="_iOnC">
-      <property role="TrG5h" value="payFrom" />
+      <property role="TrG5h" value="transferFrom" />
       <property role="1HeIcW" value="true" />
       <node concept="1QScDb" id="7Jd17oo358L" role="1ahQXP">
         <node concept="3sPC8h" id="7Jd17oo359f" role="1QScD9">
@@ -388,12 +393,12 @@
             <ref role="3o_JH" node="7Jd17oo34S9" resolve="balance" />
           </node>
           <node concept="1afdae" id="7Jd17oo359I" role="30czhm">
-            <ref role="1afue_" node="7Jd17oo358M" resolve="acct" />
+            <ref role="1afue_" node="7Jd17oo358M" resolve="account" />
           </node>
         </node>
       </node>
       <node concept="1ahQXy" id="7Jd17oo358M" role="1ahQWs">
-        <property role="TrG5h" value="acct" />
+        <property role="TrG5h" value="account" />
         <node concept="2Ss9cW" id="7Jd17oo359h" role="3ix9CU">
           <ref role="2Ss9cX" node="7Jd17oo34RG" resolve="Account" />
         </node>
@@ -415,13 +420,13 @@
             <ref role="3o_JH" node="7Jd17oo34S9" resolve="balance" />
           </node>
           <node concept="1afdae" id="7Jd17oo359K" role="30czhm">
-            <ref role="1afue_" node="7Jd17oo358Q" resolve="acct" />
+            <ref role="1afue_" node="7Jd17oo358Q" resolve="account" />
           </node>
         </node>
         <node concept="3sQ2Ir" id="7Jd17oo359k" role="1QScD9" />
       </node>
       <node concept="1ahQXy" id="7Jd17oo358Q" role="1ahQWs">
-        <property role="TrG5h" value="acct" />
+        <property role="TrG5h" value="account" />
         <node concept="2Ss9cW" id="7Jd17oo359l" role="3ix9CU">
           <ref role="2Ss9cX" node="7Jd17oo34RG" resolve="Account" />
         </node>
@@ -429,13 +434,18 @@
       <node concept="2lgajW" id="7Jd17oo358R" role="28QfE6" />
     </node>
     <node concept="_ixoA" id="7Jd17oo358t" role="_iOnC" />
+    <node concept="1X3_iC" id="1nZAa4DNO_R" role="lGtFl">
+      <property role="3V$3am" value="contents" />
+      <property role="3V$3ak" value="71934284-d7d1-45ee-a054-8c072591085f/543569365052711055/543569365052711058" />
+      <node concept="_ixoA" id="1nZAa4DNNJN" role="8Wnug" />
+    </node>
     <node concept="1aga60" id="7Jd17oo358u" role="_iOnC">
       <property role="TrG5h" value="transfer" />
       <node concept="3jbV7z" id="7Jd17oo358S" role="1ahQXP">
         <node concept="1aduha" id="7Jd17oo359m" role="3jbV7y">
           <node concept="1QScDb" id="7Jd17oo359L" role="1aduh9">
             <node concept="1He9k6" id="7Jd17oo35a7" role="1QScD9">
-              <ref role="1He9kT" node="7Jd17oo358q" resolve="payTo" />
+              <ref role="1He9kT" node="7Jd17oo358q" resolve="transferTo" />
               <node concept="1afdae" id="7Jd17oo35am" role="1H9Mq6">
                 <ref role="1afue_" node="7Jd17oo358V" resolve="amount" />
               </node>
@@ -446,7 +456,7 @@
           </node>
           <node concept="1QScDb" id="7Jd17oo359M" role="1aduh9">
             <node concept="1He9k6" id="7Jd17oo35a9" role="1QScD9">
-              <ref role="1He9kT" node="7Jd17oo358r" resolve="payFrom" />
+              <ref role="1He9kT" node="7Jd17oo358r" resolve="transferFrom" />
               <node concept="1afdae" id="7Jd17oo35an" role="1H9Mq6">
                 <ref role="1afue_" node="7Jd17oo358V" resolve="amount" />
               </node>
@@ -481,7 +491,7 @@
     <node concept="1aga60" id="7Jd17oo358w" role="_iOnC">
       <property role="TrG5h" value="newAccount" />
       <node concept="1ahQXy" id="7Jd17oo358X" role="1ahQWs">
-        <property role="TrG5h" value="acctNumber" />
+        <property role="TrG5h" value="accNumber" />
         <node concept="1WbbFT" id="5357YCoiyKQ" role="3ix9CU">
           <ref role="1WbbFS" node="7Jd17oo34RD" resolve="address" />
         </node>
@@ -501,7 +511,7 @@
             <ref role="2Ss9cX" node="7Jd17oo34RG" resolve="Account" />
           </node>
           <node concept="1afdae" id="7Jd17oo359P" role="2S399l">
-            <ref role="1afue_" node="7Jd17oo358X" resolve="acctNumber" />
+            <ref role="1afue_" node="7Jd17oo358X" resolve="accNumber" />
           </node>
           <node concept="1afdae" id="7Jd17oo359Q" role="2S399l">
             <ref role="1afue_" node="7Jd17oo358Y" resolve="startAmount" />
@@ -697,8 +707,7 @@
                 </node>
                 <node concept="2vmpnb" id="3lQITeQs40v" role="30dEs_" />
               </node>
-              <node concept="30d6GG" id="34d0X35CHnp" role="30dEs_">
-                <node concept="3C7svV" id="34d0X35CJDd" role="30dEs_" />
+              <node concept="30d7iD" id="1nZAa4DNQgf" role="30dEs_">
                 <node concept="1QScDb" id="34d0X35CCQ6" role="30dEsF">
                   <node concept="3o_JK" id="34d0X35CF6G" role="1QScD9">
                     <ref role="3o_JH" node="34d0X31G9gw" resolve="expiration" />
@@ -710,6 +719,7 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3C7svV" id="34d0X35CJDd" role="30dEs_" />
               </node>
             </node>
             <node concept="1i5Bf1" id="3lQITeQsnr5" role="2fGnzA" />
@@ -1032,7 +1042,6 @@
         </node>
       </node>
     </node>
-    <node concept="_ixoA" id="5qVL_PWrx1o" role="_iOnC" />
     <node concept="2Ss9d8" id="5qVL_PWrx3Z" role="_iOnC">
       <property role="TrG5h" value="Prosumer" />
       <node concept="2Ss9d7" id="5qVL_PWrx5u" role="S5Trm">
@@ -1048,7 +1057,6 @@
         </node>
       </node>
     </node>
-    <node concept="_ixoA" id="5qVL_PW_4tL" role="_iOnC" />
     <node concept="2Ss9d8" id="5qVL_PW_4tT" role="_iOnC">
       <property role="TrG5h" value="Bid" />
       <node concept="2Ss9d7" id="5qVL_PW_4ud" role="S5Trm">
@@ -1114,8 +1122,6 @@
         </node>
       </node>
     </node>
-    <node concept="_ixoA" id="5qVL_PWrluv" role="_iOnC" />
-    <node concept="_ixoA" id="3lQITeQndjd" role="_iOnC" />
     <node concept="2zPypq" id="3lQITeQntr6" role="_iOnC">
       <property role="TrG5h" value="offers" />
       <node concept="15qgo_" id="3lQITeQnF_y" role="2zPyp_">
@@ -1323,6 +1329,9 @@
       <node concept="174hPg" id="1nZAa4DC90N" role="17tHGx">
         <property role="TrG5h" value="checkTimeout" />
       </node>
+      <node concept="174hPg" id="XcMVlRfW2s" role="17tHGx">
+        <property role="TrG5h" value="ifToBid" />
+      </node>
       <node concept="qdjUo" id="5qVL_PW_b0X" role="17tHGx">
         <node concept="1aga60" id="5qVL_PW_b0Z" role="qdjUt">
           <property role="TrG5h" value="giveBid" />
@@ -1528,30 +1537,14 @@
           <node concept="1aduha" id="5qVL_PWrGuS" role="1ahQXP">
             <node concept="2fGnzi" id="5qVL_PWrGvd" role="1aduh9">
               <node concept="2fGnzd" id="5qVL_PWrGve" role="2fGnxs">
-                <node concept="30deu6" id="5qVL_PWrGB$" role="2fGnzS">
-                  <node concept="30d7iD" id="5qVL_PWrH9W" role="30dEs_">
-                    <node concept="3C7svV" id="5qVL_PWrMls" role="30dEs_" />
-                    <node concept="1QScDb" id="5qVL_PWrGMw" role="30dEsF">
-                      <node concept="3o_JK" id="5qVL_PWrGP2" role="1QScD9">
-                        <ref role="3o_JH" node="34d0X31G9gw" resolve="expiration" />
-                      </node>
-                      <node concept="1QScDb" id="4VPcSQVbY_5" role="30czhm">
-                        <node concept="3sQ2Ir" id="4VPcSQVc0hJ" role="1QScD9" />
-                        <node concept="1afdae" id="5qVL_PWrGDv" role="30czhm">
-                          <ref role="1afue_" node="5qVL_PWrGsl" resolve="offer" />
-                        </node>
-                      </node>
-                    </node>
+                <node concept="1QScDb" id="5qVL_PWrG$3" role="2fGnzS">
+                  <node concept="3o_JK" id="5qVL_PWrG_G" role="1QScD9">
+                    <ref role="3o_JH" node="3lQITeQmqsi" resolve="sold" />
                   </node>
-                  <node concept="1QScDb" id="5qVL_PWrG$3" role="30dEsF">
-                    <node concept="3o_JK" id="5qVL_PWrG_G" role="1QScD9">
-                      <ref role="3o_JH" node="3lQITeQmqsi" resolve="sold" />
-                    </node>
-                    <node concept="1QScDb" id="4VPcSQVbV8x" role="30czhm">
-                      <node concept="3sQ2Ir" id="4VPcSQVbWPD" role="1QScD9" />
-                      <node concept="1afdae" id="5qVL_PWrGwh" role="30czhm">
-                        <ref role="1afue_" node="5qVL_PWrGsl" resolve="offer" />
-                      </node>
+                  <node concept="1QScDb" id="4VPcSQVbV8x" role="30czhm">
+                    <node concept="3sQ2Ir" id="4VPcSQVbWPD" role="1QScD9" />
+                    <node concept="1afdae" id="5qVL_PWrGwh" role="30czhm">
+                      <ref role="1afue_" node="5qVL_PWrGsl" resolve="offer" />
                     </node>
                   </node>
                 </node>
@@ -1765,7 +1758,7 @@
                 </node>
               </node>
               <node concept="1adJid" id="1nZAa4DKSvA" role="1aduh9">
-                <property role="TrG5h" value="ttest" />
+                <property role="TrG5h" value="chosen_offer" />
                 <node concept="1QScDb" id="1nZAa4DKSvB" role="1adJii">
                   <node concept="3izCyS" id="1nZAa4DKSvC" role="1QScD9">
                     <node concept="3izI60" id="1nZAa4DKSvD" role="3iAY4F">
@@ -1795,36 +1788,14 @@
                 <node concept="pf3Wd" id="1nZAa4DJCOb" role="pf3W8">
                   <node concept="UmHTt" id="1nZAa4DK5PB" role="pf3We" />
                 </node>
-                <node concept="30deo4" id="1nZAa4DL040" role="39w5ZE">
-                  <node concept="30d7iD" id="1nZAa4DLab_" role="30dEsF">
-                    <node concept="30bXRB" id="1nZAa4DLcIx" role="30dEs_">
-                      <property role="30bXRw" value="0" />
-                    </node>
-                    <node concept="1QScDb" id="1nZAa4DL576" role="30dEsF">
-                      <node concept="3iB8M5" id="1nZAa4DL7E0" role="1QScD9" />
-                      <node concept="1adzI2" id="1nZAa4DL2Ay" role="30czhm">
-                        <ref role="1adwt6" node="1nZAa4DKSvA" resolve="ttest" />
-                      </node>
-                    </node>
+                <node concept="30d7iD" id="1nZAa4DLab_" role="39w5ZE">
+                  <node concept="30bXRB" id="1nZAa4DLcIx" role="30dEs_">
+                    <property role="30bXRw" value="0" />
                   </node>
-                  <node concept="30d7iD" id="1nZAa4DL041" role="30dEs_">
-                    <node concept="1QScDb" id="1nZAa4DL042" role="30dEsF">
-                      <node concept="1QScDb" id="1nZAa4DLkjb" role="30czhm">
-                        <node concept="3iAU3G" id="1nZAa4DLmML" role="1QScD9">
-                          <node concept="30bXRB" id="1nZAa4DLple" role="3iAY4F">
-                            <property role="30bXRw" value="0" />
-                          </node>
-                        </node>
-                        <node concept="1adzI2" id="1nZAa4DLhKH" role="30czhm">
-                          <ref role="1adwt6" node="1nZAa4DKSvA" resolve="ttest" />
-                        </node>
-                      </node>
-                      <node concept="3o_JK" id="1nZAa4DJTHh" role="1QScD9">
-                        <ref role="3o_JH" node="34d0X31G9gw" resolve="expiration" />
-                      </node>
-                    </node>
-                    <node concept="2YqRDQ" id="1nZAa4DJY_u" role="30dEs_">
-                      <ref role="2YqRDN" node="5qVL_PWMM4r" resolve="time" />
+                  <node concept="1QScDb" id="1nZAa4DL576" role="30dEsF">
+                    <node concept="3iB8M5" id="1nZAa4DL7E0" role="1QScD9" />
+                    <node concept="1adzI2" id="1nZAa4DL2Ay" role="30czhm">
+                      <ref role="1adwt6" node="1nZAa4DKSvA" resolve="chosen_offer" />
                     </node>
                   </node>
                 </node>
@@ -1985,104 +1956,79 @@
             <ref role="1vQcaS" node="5qVL_PWydlV" resolve="finishedTrading" />
           </node>
         </node>
-        <node concept="174hPn" id="1nZAa4DtXLQ" role="17rfIJ">
-          <node concept="2AuZ2C" id="1nZAa4Du0eb" role="2AuZ2o">
+        <node concept="174hPn" id="XcMVlR0YaD" role="17rfIJ">
+          <node concept="2AuZ2C" id="XcMVlR10Uj" role="2AuZ2o">
             <ref role="2AuZ2q" node="1nZAa4DtSIF" resolve="bidingTransition" />
           </node>
-          <node concept="17sVkC" id="1nZAa4Du4ZV" role="174hPE">
-            <node concept="30deo4" id="1nZAa4Du503" role="17sVkD">
-              <node concept="30cPrO" id="1nZAa4Du504" role="30dEsF">
-                <node concept="1QScDb" id="1nZAa4Du505" role="30dEsF">
-                  <node concept="1QScDb" id="1nZAa4Du506" role="30czhm">
-                    <node concept="2YgRg0" id="1nZAa4Du507" role="30czhm">
-                      <ref role="2YgRg3" node="4VPcSQUW6tk" resolve="existingBids" />
+          <node concept="17sVkC" id="XcMVlR10Up" role="174hPE">
+            <node concept="30bsCy" id="XcMVlR10Uz" role="17sVkD">
+              <node concept="1QScDb" id="XcMVlR16mE" role="30bsDf">
+                <node concept="2TZ5KL" id="XcMVlR194B" role="1QScD9">
+                  <node concept="3izI60" id="XcMVlR194C" role="3iAY4F">
+                    <node concept="1aduha" id="XcMVlR1ewu" role="3izI61">
+                      <node concept="30deu6" id="XcMVlR1OFU" role="1aduh9">
+                        <node concept="30d6GJ" id="XcMVlR1OFV" role="30dEsF">
+                          <node concept="1QScDb" id="XcMVlR1OFW" role="30dEsF">
+                            <node concept="3izPEI" id="XcMVlR1$fq" role="30czhm" />
+                            <node concept="3o_JK" id="XcMVlR1DG0" role="1QScD9">
+                              <ref role="3o_JH" node="34d0X31G9gw" resolve="expiration" />
+                            </node>
+                          </node>
+                          <node concept="3C7svV" id="XcMVlR1LWK" role="30dEs_" />
+                        </node>
+                        <node concept="30deo4" id="XcMVlR2b4v" role="30dEs_">
+                          <node concept="30bsCy" id="XcMVlR2dV3" role="30dEs_">
+                            <node concept="30deu6" id="XcMVlR2pdc" role="30bsDf">
+                              <node concept="1QScDb" id="XcMVlR2uRj" role="30dEs_">
+                                <node concept="3sQ2Ir" id="XcMVlR2xIW" role="1QScD9" />
+                                <node concept="2YgRg0" id="XcMVlR2s4I" role="30czhm">
+                                  <ref role="2YgRg3" node="1nZAa4DpCLZ" resolve="bids_processed" />
+                                </node>
+                              </node>
+                              <node concept="1QScDb" id="XcMVlR2jxf" role="30dEsF">
+                                <node concept="3sQ2Ir" id="XcMVlR2mnM" role="1QScD9" />
+                                <node concept="2YgRg0" id="XcMVlR2gJg" role="30czhm">
+                                  <ref role="2YgRg3" node="1nZAa4DqbjN" resolve="first" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="1QScDb" id="XcMVlR1ZIN" role="30dEsF">
+                            <node concept="1QScDb" id="XcMVlR1U9T" role="30czhm">
+                              <node concept="3sQ2Ir" id="XcMVlR1WTR" role="1QScD9" />
+                              <node concept="2YgRg0" id="XcMVlR1RsZ" role="30czhm">
+                                <ref role="2YgRg3" node="4VPcSQUW6tk" resolve="existingBids" />
+                              </node>
+                            </node>
+                            <node concept="2TI7Wt" id="XcMVlR7RF0" role="1QScD9">
+                              <node concept="1QScDb" id="XcMVlR7WNn" role="3iAY4F">
+                                <node concept="3o_JK" id="XcMVlR7ZmY" role="1QScD9">
+                                  <ref role="3o_JH" node="5qVL_PWrDnj" resolve="id" />
+                                </node>
+                                <node concept="3izPEI" id="XcMVlR7Ugo" role="30czhm" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
-                    <node concept="3sQ2Ir" id="1nZAa4Du508" role="1QScD9" />
                   </node>
-                  <node concept="3iB8M5" id="1nZAa4Du509" role="1QScD9" />
                 </node>
-                <node concept="1QScDb" id="1nZAa4Du50a" role="30dEs_">
-                  <node concept="1QScDb" id="1nZAa4Du50b" role="30czhm">
-                    <node concept="_emDc" id="1nZAa4Du50c" role="30czhm">
-                      <ref role="_emDf" node="3lQITeQntr6" resolve="offers" />
-                    </node>
-                    <node concept="3sQ2Ir" id="1nZAa4Du50d" role="1QScD9" />
-                  </node>
-                  <node concept="3iB8M5" id="1nZAa4Du50e" role="1QScD9" />
-                </node>
-              </node>
-              <node concept="30bsCy" id="1nZAa4Du50f" role="30dEs_">
-                <node concept="30deu6" id="1nZAa4Du50g" role="30bsDf">
-                  <node concept="1QScDb" id="1nZAa4Du50h" role="30dEs_">
-                    <node concept="3sQ2Ir" id="1nZAa4Du50i" role="1QScD9" />
-                    <node concept="2YgRg0" id="1nZAa4Du50j" role="30czhm">
-                      <ref role="2YgRg3" node="1nZAa4DpCLZ" resolve="bids_processed" />
-                    </node>
-                  </node>
-                  <node concept="1QScDb" id="1nZAa4Du50k" role="30dEsF">
-                    <node concept="3sQ2Ir" id="1nZAa4Du50l" role="1QScD9" />
-                    <node concept="2YgRg0" id="1nZAa4Du50m" role="30czhm">
-                      <ref role="2YgRg3" node="1nZAa4DqbjN" resolve="first" />
-                    </node>
+                <node concept="1QScDb" id="XcMVlR10Vv" role="30czhm">
+                  <node concept="3sQ2Ir" id="XcMVlR13BZ" role="1QScD9" />
+                  <node concept="_emDc" id="XcMVlR10UT" role="30czhm">
+                    <ref role="_emDf" node="3lQITeQntr6" resolve="offers" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="1vQcaV" id="1nZAa4Du57s" role="1vQNHF">
+          <node concept="1vQcaV" id="XcMVlR2Bqq" role="1vQNHF">
             <ref role="1vQcaS" node="1nZAa4DrRTx" resolve="finishedBids" />
           </node>
         </node>
-        <node concept="1X3_iC" id="1nZAa4Du57w" role="lGtFl">
-          <property role="3V$3am" value="contents" />
-          <property role="3V$3ak" value="cd87ddab-6434-448e-a011-1e1c898de18e/8735085014265912535/8735085014268885541" />
-          <node concept="1vZJXP" id="5qVL_PWNdG0" role="8Wnug">
-            <node concept="17sVkC" id="5qVL_PWNdG1" role="174hPE">
-              <node concept="30deo4" id="1nZAa4Dq4kx" role="17sVkD">
-                <node concept="30cPrO" id="1nZAa4Dq4ky" role="30dEsF">
-                  <node concept="1QScDb" id="1nZAa4Dq4kz" role="30dEsF">
-                    <node concept="1QScDb" id="1nZAa4Dq4k$" role="30czhm">
-                      <node concept="2YgRg0" id="4VPcSQUWRMT" role="30czhm">
-                        <ref role="2YgRg3" node="4VPcSQUW6tk" resolve="existingBids" />
-                      </node>
-                      <node concept="3sQ2Ir" id="4VPcSQUWVl_" role="1QScD9" />
-                    </node>
-                    <node concept="3iB8M5" id="4VPcSQUX0F7" role="1QScD9" />
-                  </node>
-                  <node concept="1QScDb" id="1nZAa4Dq4k_" role="30dEs_">
-                    <node concept="1QScDb" id="1nZAa4Dq4kA" role="30czhm">
-                      <node concept="_emDc" id="4VPcSQUX4hb" role="30czhm">
-                        <ref role="_emDf" node="3lQITeQntr6" resolve="offers" />
-                      </node>
-                      <node concept="3sQ2Ir" id="4VPcSQUX9DW" role="1QScD9" />
-                    </node>
-                    <node concept="3iB8M5" id="4VPcSQUXdgS" role="1QScD9" />
-                  </node>
-                </node>
-                <node concept="30bsCy" id="1nZAa4Dq6_X" role="30dEs_">
-                  <node concept="30deu6" id="1nZAa4DqTto" role="30bsDf">
-                    <node concept="1QScDb" id="1nZAa4DqY8R" role="30dEs_">
-                      <node concept="3sQ2Ir" id="1nZAa4Dr0td" role="1QScD9" />
-                      <node concept="2YgRg0" id="1nZAa4DqVN3" role="30czhm">
-                        <ref role="2YgRg3" node="1nZAa4DpCLZ" resolve="bids_processed" />
-                      </node>
-                    </node>
-                    <node concept="1QScDb" id="1nZAa4Dqrxb" role="30dEsF">
-                      <node concept="3sQ2Ir" id="1nZAa4DqtMX" role="1QScD9" />
-                      <node concept="2YgRg0" id="1nZAa4DqmV2" role="30czhm">
-                        <ref role="2YgRg3" node="1nZAa4DqbjN" resolve="first" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="1vQcaV" id="4VPcSQURJ_O" role="1vQNHF">
-              <ref role="1vQcaS" node="1nZAa4DrRTx" resolve="finishedBids" />
-            </node>
-          </node>
-        </node>
       </node>
+      <node concept="17qw2z" id="XcMVlQYdS7" role="17tHGx" />
       <node concept="17qw2z" id="4VPcSQUXo93" role="17tHGx" />
       <node concept="174hPt" id="1nZAa4DrRTx" role="17tHGx">
         <property role="TrG5h" value="finishedBids" />
@@ -2588,13 +2534,24 @@
                 </node>
                 <node concept="2TZ5KL" id="1nZAa4DvywO" role="1QScD9">
                   <node concept="3izI60" id="1nZAa4DvywP" role="3iAY4F">
-                    <node concept="30cPrO" id="1nZAa4DvywQ" role="3izI61">
-                      <node concept="2vmpnb" id="1nZAa4DvywR" role="30dEs_" />
-                      <node concept="1QScDb" id="1nZAa4DvywS" role="30dEsF">
-                        <node concept="3o_JK" id="1nZAa4DvywT" role="1QScD9">
-                          <ref role="3o_JH" node="3lQITeQmqsi" resolve="sold" />
+                    <node concept="30deu6" id="XcMVlRadRZ" role="3izI61">
+                      <node concept="30cPrO" id="XcMVlRadS0" role="30dEsF">
+                        <node concept="1QScDb" id="XcMVlRadS1" role="30dEsF">
+                          <node concept="3izPEI" id="1nZAa4DvywU" role="30czhm" />
+                          <node concept="3o_JK" id="1nZAa4DvywT" role="1QScD9">
+                            <ref role="3o_JH" node="3lQITeQmqsi" resolve="sold" />
+                          </node>
                         </node>
-                        <node concept="3izPEI" id="1nZAa4DvywU" role="30czhm" />
+                        <node concept="2vmpnb" id="1nZAa4DvywR" role="30dEs_" />
+                      </node>
+                      <node concept="30d6GJ" id="XcMVlRaoau" role="30dEs_">
+                        <node concept="3C7svV" id="XcMVlRaqIs" role="30dEs_" />
+                        <node concept="1QScDb" id="XcMVlRaj1J" role="30dEsF">
+                          <node concept="3o_JK" id="XcMVlRalAa" role="1QScD9">
+                            <ref role="3o_JH" node="34d0X31G9gw" resolve="expiration" />
+                          </node>
+                          <node concept="3izPEI" id="XcMVlRagsp" role="30czhm" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -2638,58 +2595,53 @@
             </node>
           </node>
         </node>
-        <node concept="1vZJXP" id="zD8TH3N$qz" role="17rfIJ">
-          <node concept="17sVkC" id="zD8TH3N$q$" role="174hPE">
-            <node concept="30deo4" id="1nZAa4DyAq4" role="17sVkD">
-              <node concept="30deo4" id="1nZAa4DyAq5" role="30dEsF">
-                <node concept="1QScDb" id="1nZAa4DyFkY" role="30dEsF">
-                  <node concept="3sQ2Ir" id="1nZAa4DyHLL" role="1QScD9" />
-                  <node concept="2YgRg0" id="1nZAa4DyCS_" role="30czhm">
-                    <ref role="2YgRg3" node="zD8TH3QgW4" resolve="processed" />
-                  </node>
+        <node concept="174hPn" id="XcMVlRgn9x" role="17rfIJ">
+          <node concept="2AuZ2C" id="XcMVlRgrVx" role="2AuZ2o">
+            <ref role="2AuZ2q" node="XcMVlRfW2s" resolve="ifToBid" />
+          </node>
+          <node concept="17sVkC" id="XcMVlRgu6g" role="174hPE">
+            <node concept="30deo4" id="XcMVlRgu6p" role="17sVkD">
+              <node concept="1QScDb" id="XcMVlRgu6q" role="30dEsF">
+                <node concept="3sQ2Ir" id="XcMVlRgu6r" role="1QScD9" />
+                <node concept="2YgRg0" id="XcMVlRgu6s" role="30czhm">
+                  <ref role="2YgRg3" node="zD8TH3QgW4" resolve="processed" />
                 </node>
-                <node concept="1QScDb" id="1nZAa4DyAq6" role="30dEs_">
-                  <node concept="1QScDb" id="1nZAa4DyAq7" role="30czhm">
-                    <node concept="_emDc" id="zD8TH3NAAO" role="30czhm">
-                      <ref role="_emDf" node="3lQITeQntr6" resolve="offers" />
-                    </node>
-                    <node concept="3sQ2Ir" id="zD8TH3NCL1" role="1QScD9" />
+              </node>
+              <node concept="1QScDb" id="XcMVlRgu6t" role="30dEs_">
+                <node concept="1QScDb" id="XcMVlRgu6u" role="30czhm">
+                  <node concept="_emDc" id="XcMVlRgu6v" role="30czhm">
+                    <ref role="_emDf" node="3lQITeQntr6" resolve="offers" />
                   </node>
-                  <node concept="2Tz0gS" id="zD8TH3NJmP" role="1QScD9">
-                    <node concept="3izI60" id="zD8TH3NJmQ" role="3iAY4F">
-                      <node concept="30deo4" id="zD8TH3OJFm" role="3izI61">
-                        <node concept="30cPrO" id="zD8TH3OJFn" role="30dEsF">
-                          <node concept="1QScDb" id="zD8TH3OJFo" role="30dEsF">
-                            <node concept="3izPEI" id="zD8TH3NJmS" role="30czhm" />
-                            <node concept="3o_JK" id="zD8TH3NNFs" role="1QScD9">
-                              <ref role="3o_JH" node="3lQITeQmqsi" resolve="sold" />
-                            </node>
+                  <node concept="3sQ2Ir" id="XcMVlRgu6w" role="1QScD9" />
+                </node>
+                <node concept="2Tz0gS" id="XcMVlRgu6x" role="1QScD9">
+                  <node concept="3izI60" id="XcMVlRgu6y" role="3iAY4F">
+                    <node concept="30deo4" id="XcMVlRgu6z" role="3izI61">
+                      <node concept="30cPrO" id="XcMVlRgu6$" role="30dEsF">
+                        <node concept="1QScDb" id="XcMVlRgu6_" role="30dEsF">
+                          <node concept="3izPEI" id="XcMVlRgu6A" role="30czhm" />
+                          <node concept="3o_JK" id="XcMVlRgu6B" role="1QScD9">
+                            <ref role="3o_JH" node="3lQITeQmqsi" resolve="sold" />
                           </node>
-                          <node concept="2vmpn$" id="zD8TH3NS59" role="30dEs_" />
                         </node>
-                        <node concept="30d6GJ" id="zD8TH3OSEC" role="30dEs_">
-                          <node concept="3C7svV" id="zD8TH3OUWv" role="30dEs_" />
-                          <node concept="1QScDb" id="zD8TH3OOaw" role="30dEsF">
-                            <node concept="3o_JK" id="zD8TH3OQpS" role="1QScD9">
-                              <ref role="3o_JH" node="34d0X31G9gw" resolve="expiration" />
-                            </node>
-                            <node concept="3izPEI" id="zD8TH3OLXm" role="30czhm" />
+                        <node concept="2vmpn$" id="XcMVlRgu6C" role="30dEs_" />
+                      </node>
+                      <node concept="30d7iD" id="XcMVlRgu6D" role="30dEs_">
+                        <node concept="3C7svV" id="XcMVlRgu6E" role="30dEs_" />
+                        <node concept="1QScDb" id="XcMVlRgu6F" role="30dEsF">
+                          <node concept="3o_JK" id="XcMVlRgu6G" role="1QScD9">
+                            <ref role="3o_JH" node="34d0X31G9gw" resolve="expiration" />
                           </node>
+                          <node concept="3izPEI" id="XcMVlRgu6H" role="30czhm" />
                         </node>
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="1QScDb" id="1nZAa4DyAq8" role="30dEs_">
-                <node concept="2YgRg0" id="zD8TH3QnMl" role="30czhm">
-                  <ref role="2YgRg3" node="zD8TH3QgW4" resolve="processed" />
-                </node>
-                <node concept="3sQ2Ir" id="zD8TH3QuvP" role="1QScD9" />
-              </node>
             </node>
           </node>
-          <node concept="1vQcaV" id="zD8TH3NWsD" role="1vQNHF">
+          <node concept="1vQcaV" id="XcMVlRgAcV" role="1vQNHF">
             <ref role="1vQcaS" node="5qVL_PWMEDI" resolve="bids" />
           </node>
         </node>
@@ -2814,7 +2766,7 @@
       <node concept="3C7svV" id="1nZAa4DGwYZ" role="2zPyp_" />
     </node>
     <node concept="2zPypq" id="5qVL_PWyLfp" role="_iOnB">
-      <property role="TrG5h" value="offers" />
+      <property role="TrG5h" value="offers_1" />
       <node concept="3iBYfx" id="5qVL_PWyLrO" role="2zPyp_">
         <node concept="2S399m" id="5qVL_PWyLrV" role="3iBYfI">
           <node concept="2Ss9cW" id="5qVL_PWyLs2" role="2S399n">
@@ -2864,12 +2816,75 @@
             <property role="30bXRw" value="6" />
           </node>
           <node concept="2vmpn$" id="5qVL_PWyR0i" role="2S399l" />
-          <node concept="_emDc" id="5qVL_PWyR0j" role="2S399l">
-            <ref role="_emDf" node="1nZAa4DCALF" resolve="timestamp" />
+          <node concept="30dDZf" id="XcMVlR05Jn" role="2S399l">
+            <node concept="30bXRB" id="XcMVlR07At" role="30dEs_">
+              <property role="30bXRw" value="100000000000" />
+            </node>
+            <node concept="_emDc" id="5qVL_PWyR0j" role="30dEsF">
+              <ref role="_emDf" node="1nZAa4DCALF" resolve="timestamp" />
+            </node>
           </node>
         </node>
       </node>
     </node>
+    <node concept="2zPypq" id="XcMVlR0swY" role="_iOnB">
+      <property role="TrG5h" value="offers" />
+      <node concept="3iBYfx" id="XcMVlR0swZ" role="2zPyp_">
+        <node concept="2S399m" id="XcMVlR0sx0" role="3iBYfI">
+          <node concept="2Ss9cW" id="XcMVlR0sx1" role="2S399n">
+            <ref role="2Ss9cX" node="3lQITeQm68Q" resolve="Energy_Offer" />
+          </node>
+          <node concept="30bXRB" id="XcMVlR0sx2" role="2S399l">
+            <property role="30bXRw" value="1" />
+          </node>
+          <node concept="30bXRB" id="XcMVlR0sx3" role="2S399l">
+            <property role="30bXRw" value="10" />
+          </node>
+          <node concept="1KhrV4" id="XcMVlR0sx4" role="2S399l">
+            <node concept="30bXRB" id="XcMVlR0sx5" role="12NKtY">
+              <property role="30bXRw" value="0.5" />
+            </node>
+            <node concept="1WbbFT" id="XcMVlR0sx6" role="1KhrV9">
+              <ref role="1WbbFS" node="5357YCkL4g2" resolve="posNum" />
+            </node>
+          </node>
+          <node concept="30bXRB" id="XcMVlR0sx7" role="2S399l">
+            <property role="30bXRw" value="5" />
+          </node>
+          <node concept="2vmpn$" id="XcMVlR0sx8" role="2S399l" />
+          <node concept="_emDc" id="XcMVlR0sx9" role="2S399l">
+            <ref role="_emDf" node="1nZAa4DCALF" resolve="timestamp" />
+          </node>
+        </node>
+        <node concept="2S399m" id="XcMVlR0sxa" role="3iBYfI">
+          <node concept="2Ss9cW" id="XcMVlR0sxb" role="2S399n">
+            <ref role="2Ss9cX" node="3lQITeQm68Q" resolve="Energy_Offer" />
+          </node>
+          <node concept="30bXRB" id="XcMVlR0sxc" role="2S399l">
+            <property role="30bXRw" value="2" />
+          </node>
+          <node concept="30bXRB" id="XcMVlR0sxd" role="2S399l">
+            <property role="30bXRw" value="10" />
+          </node>
+          <node concept="1KhrV4" id="XcMVlR0sxe" role="2S399l">
+            <node concept="30bXRB" id="XcMVlR0sxf" role="12NKtY">
+              <property role="30bXRw" value="0.5" />
+            </node>
+            <node concept="1WbbFT" id="XcMVlR0sxg" role="1KhrV9">
+              <ref role="1WbbFS" node="5357YCkL4g2" resolve="posNum" />
+            </node>
+          </node>
+          <node concept="30bXRB" id="XcMVlR0sxh" role="2S399l">
+            <property role="30bXRw" value="6" />
+          </node>
+          <node concept="2vmpn$" id="XcMVlR0sxi" role="2S399l" />
+          <node concept="30bXRB" id="XcMVlR3ME8" role="2S399l">
+            <property role="30bXRw" value="1647045604973" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="_ixoA" id="XcMVlR0qxk" role="_iOnB" />
     <node concept="2zPypq" id="5qVL_PWyRX2" role="_iOnB">
       <property role="TrG5h" value="sales" />
       <node concept="15qgo_" id="5qVL_PWyShL" role="2zPyp_">
@@ -3035,7 +3050,7 @@
           <node concept="1QScDb" id="5qVL_PWLR86" role="1aduh9">
             <node concept="3sPC8h" id="5qVL_PWLRHv" role="1QScD9">
               <node concept="_emDc" id="5qVL_PWLSjF" role="3sPC8l">
-                <ref role="_emDf" node="5qVL_PWyLfp" resolve="offers" />
+                <ref role="_emDf" node="5qVL_PWyLfp" resolve="offers_1" />
               </node>
             </node>
             <node concept="_emDc" id="5qVL_PWLQxS" role="30czhm">
@@ -3243,7 +3258,7 @@
           <node concept="1QScDb" id="4VPcSQVCb8Q" role="1aduh9">
             <node concept="3sPC8h" id="4VPcSQVCb8R" role="1QScD9">
               <node concept="_emDc" id="4VPcSQVCb8S" role="3sPC8l">
-                <ref role="_emDf" node="5qVL_PWyLfp" resolve="offers" />
+                <ref role="_emDf" node="5qVL_PWyLfp" resolve="offers_1" />
               </node>
             </node>
             <node concept="_emDc" id="4VPcSQVCb8T" role="30czhm">
@@ -3395,7 +3410,7 @@
           <node concept="1QScDb" id="zD8TH3RHQQ" role="1aduh9">
             <node concept="3sPC8h" id="zD8TH3RHQR" role="1QScD9">
               <node concept="_emDc" id="zD8TH3RHQS" role="3sPC8l">
-                <ref role="_emDf" node="5qVL_PWyLfp" resolve="offers" />
+                <ref role="_emDf" node="5qVL_PWyLfp" resolve="offers_1" />
               </node>
             </node>
             <node concept="_emDc" id="zD8TH3RHQT" role="30czhm">
@@ -3483,7 +3498,7 @@
           </node>
           <node concept="1QScDb" id="1nZAa4DxOZV" role="1aduh9">
             <node concept="174ZEm" id="1nZAa4DxOZW" role="1QScD9">
-              <ref role="174ZEE" node="1nZAa4DvooJ" resolve="buyTransitioning" />
+              <ref role="174ZEE" node="XcMVlRfW2s" resolve="ifToBid" />
             </node>
             <node concept="_emDc" id="1nZAa4DxOZX" role="30czhm">
               <ref role="_emDf" node="5qVL_PWLWdM" resolve="tradeEnergy" />
@@ -3615,7 +3630,7 @@
           <node concept="1QScDb" id="4VPcSQVCt5X" role="1aduh9">
             <node concept="3sPC8h" id="4VPcSQVCt5Y" role="1QScD9">
               <node concept="_emDc" id="4VPcSQVCt5Z" role="3sPC8l">
-                <ref role="_emDf" node="5qVL_PWyLfp" resolve="offers" />
+                <ref role="_emDf" node="XcMVlR0swY" resolve="offers" />
               </node>
             </node>
             <node concept="_emDc" id="4VPcSQVCt60" role="30czhm">
@@ -3670,6 +3685,10 @@
               <ref role="174ZEE" node="1nZAa4DtSIF" resolve="bidingTransition" />
             </node>
           </node>
+          <node concept="_emDc" id="XcMVlRc_au" role="1aduh9">
+            <ref role="_emDf" node="5qVL_PWLWdM" resolve="tradeEnergy" />
+            <node concept="29jrl$" id="XcMVlRcBlz" role="lGtFl" />
+          </node>
           <node concept="1QScDb" id="4VPcSQVCt6f" role="1aduh9">
             <node concept="174ZEm" id="4VPcSQVCt6g" role="1QScD9">
               <ref role="174ZEE" node="5qVL_PW_6L4" resolve="finishedBiding" />
@@ -3711,6 +3730,10 @@
             <node concept="174ZEm" id="1nZAa4DzWVQ" role="1QScD9">
               <ref role="174ZEE" node="1nZAa4DvooJ" resolve="buyTransitioning" />
             </node>
+          </node>
+          <node concept="_emDc" id="XcMVlRiw5K" role="1aduh9">
+            <ref role="_emDf" node="3lQITeQpuTD" resolve="sales" />
+            <node concept="29jrl$" id="XcMVlRiyhd" role="lGtFl" />
           </node>
           <node concept="1QScDb" id="4VPcSQVC$mN" role="1aduh9">
             <node concept="2AijNT" id="4VPcSQVC_$o" role="1QScD9">
@@ -3765,7 +3788,7 @@
           <node concept="1QScDb" id="1nZAa4D$zBP" role="1aduh9">
             <node concept="3sPC8h" id="1nZAa4D$zBQ" role="1QScD9">
               <node concept="_emDc" id="1nZAa4D$zBR" role="3sPC8l">
-                <ref role="_emDf" node="5qVL_PWyLfp" resolve="offers" />
+                <ref role="_emDf" node="5qVL_PWyLfp" resolve="offers_1" />
               </node>
             </node>
             <node concept="_emDc" id="1nZAa4D$zBS" role="30czhm">
@@ -3881,6 +3904,231 @@
             <ref role="_emDf" node="3lQITeQntr6" resolve="offers" />
             <node concept="29jrl$" id="1nZAa4D$zCv" role="lGtFl" />
           </node>
+        </node>
+      </node>
+      <node concept="2F9BGE" id="XcMVlQZxUb" role="_fkp5">
+        <node concept="1aduha" id="XcMVlQZzG6" role="_fkuZ">
+          <node concept="1aduha" id="XcMVlQZzGg" role="1aduh9">
+            <node concept="1QScDb" id="XcMVlQZzGh" role="1aduh9">
+              <node concept="3sPC8h" id="XcMVlQZzGi" role="1QScD9">
+                <node concept="_emDc" id="XcMVlQZzGj" role="3sPC8l">
+                  <ref role="_emDf" node="5qVL_PWyIrc" resolve="consumers" />
+                </node>
+              </node>
+              <node concept="_emDc" id="XcMVlQZzGk" role="30czhm">
+                <ref role="_emDf" node="7Jd17oo34S2" resolve="consumers" />
+              </node>
+            </node>
+            <node concept="1af_rf" id="XcMVlQZzGl" role="1aduh9">
+              <property role="0Rz4W" value="-498919331" />
+              <ref role="1afhQb" node="3lQITeQtUD$" resolve="isConsumer" />
+              <node concept="30bXRB" id="XcMVlQZzGm" role="1afhQ5">
+                <property role="30bXRw" value="1" />
+              </node>
+              <node concept="29jrl$" id="XcMVlQZzGn" role="lGtFl" />
+            </node>
+            <node concept="1QScDb" id="XcMVlQZzGo" role="1aduh9">
+              <node concept="3sPC8h" id="XcMVlQZzGp" role="1QScD9">
+                <node concept="_emDc" id="XcMVlQZzGq" role="3sPC8l">
+                  <ref role="_emDf" node="5qVL_PWyJSR" resolve="prosumers" />
+                </node>
+              </node>
+              <node concept="_emDc" id="XcMVlQZzGr" role="30czhm">
+                <ref role="_emDf" node="7Jd17oo34S3" resolve="prosumers" />
+              </node>
+            </node>
+            <node concept="1af_rf" id="XcMVlQZzGs" role="1aduh9">
+              <property role="0Rz4W" value="2095018611" />
+              <ref role="1afhQb" node="3lQITeQvj$T" resolve="isProsumer" />
+              <node concept="30bXRB" id="XcMVlQZzGt" role="1afhQ5">
+                <property role="30bXRw" value="3" />
+              </node>
+              <node concept="29jrl$" id="XcMVlQZzGu" role="lGtFl" />
+            </node>
+            <node concept="1QScDb" id="XcMVlQZzGv" role="1aduh9">
+              <node concept="3sPC8h" id="XcMVlQZzGw" role="1QScD9">
+                <node concept="_emDc" id="XcMVlQZzGx" role="3sPC8l">
+                  <ref role="_emDf" node="XcMVlR0swY" resolve="offers" />
+                </node>
+              </node>
+              <node concept="_emDc" id="XcMVlQZzGy" role="30czhm">
+                <ref role="_emDf" node="3lQITeQntr6" resolve="offers" />
+              </node>
+            </node>
+            <node concept="_emDc" id="XcMVlR3BrM" role="1aduh9">
+              <ref role="_emDf" node="XcMVlR0swY" resolve="offers" />
+              <node concept="29jrl$" id="XcMVlR3Dse" role="lGtFl" />
+            </node>
+            <node concept="1QScDb" id="XcMVlQZzGz" role="1aduh9">
+              <node concept="_emDc" id="XcMVlQZzG$" role="30czhm">
+                <ref role="_emDf" node="5qVL_PWLWdM" resolve="tradeEnergy" />
+              </node>
+              <node concept="174ZEm" id="XcMVlQZzG_" role="1QScD9">
+                <ref role="174ZEE" node="5qVL_PWMH_0" resolve="biding" />
+                <node concept="30bXRB" id="XcMVlQZzGA" role="2Yl$dn">
+                  <property role="30bXRw" value="1" />
+                </node>
+                <node concept="30bXRB" id="XcMVlQZzGB" role="2Yl$dn">
+                  <property role="30bXRw" value="15" />
+                </node>
+                <node concept="30bXRB" id="XcMVlQZzGC" role="2Yl$dn">
+                  <property role="30bXRw" value="1" />
+                </node>
+                <node concept="_emDc" id="XcMVlQZzGD" role="2Yl$dn">
+                  <ref role="_emDf" node="4VPcSQUXypu" resolve="timestamp_1" />
+                </node>
+              </node>
+            </node>
+            <node concept="1QScDb" id="XcMVlQZzGL" role="1aduh9">
+              <node concept="_emDc" id="XcMVlQZzGM" role="30czhm">
+                <ref role="_emDf" node="5qVL_PWLWdM" resolve="tradeEnergy" />
+              </node>
+              <node concept="174ZEm" id="XcMVlQZzGN" role="1QScD9">
+                <ref role="174ZEE" node="1nZAa4DtSIF" resolve="bidingTransition" />
+                <node concept="1KehLL" id="XcMVlR3Xq2" role="lGtFl">
+                  <property role="1K8rM7" value="property_name" />
+                </node>
+              </node>
+            </node>
+            <node concept="1adJid" id="XcMVlR5rns" role="1aduh9">
+              <property role="TrG5h" value="test" />
+              <node concept="30deo4" id="XcMVlR9n3w" role="1adJii">
+                <node concept="1QScDb" id="XcMVlR9n3x" role="30dEsF">
+                  <node concept="_emDc" id="XcMVlR6$UK" role="30czhm">
+                    <ref role="_emDf" node="XcMVlR0swY" resolve="offers" />
+                  </node>
+                  <node concept="2TZ5KL" id="XcMVlR6CUV" role="1QScD9">
+                    <node concept="3izI60" id="XcMVlR6CUW" role="3iAY4F">
+                      <node concept="30bsCy" id="XcMVlR8ewb" role="3izI61">
+                        <node concept="30deu6" id="XcMVlR6MXB" role="30bsDf">
+                          <node concept="30d6GJ" id="XcMVlR6MXC" role="30dEsF">
+                            <node concept="1QScDb" id="XcMVlR6MXD" role="30dEsF">
+                              <node concept="3izPEI" id="XcMVlR6CUY" role="30czhm" />
+                              <node concept="3o_JK" id="XcMVlR6GUY" role="1QScD9">
+                                <ref role="3o_JH" node="34d0X31G9gw" resolve="expiration" />
+                              </node>
+                            </node>
+                            <node concept="3C7svV" id="XcMVlR6KWA" role="30dEs_" />
+                          </node>
+                          <node concept="1QScDb" id="XcMVlR6Zgr" role="30dEs_">
+                            <node concept="2TI7Wt" id="XcMVlR71pa" role="1QScD9">
+                              <node concept="1QScDb" id="XcMVlR7kcb" role="3iAY4F">
+                                <node concept="3o_JK" id="XcMVlR7mnF" role="1QScD9">
+                                  <ref role="3o_JH" node="5qVL_PWrDnj" resolve="id" />
+                                </node>
+                                <node concept="3izPEI" id="XcMVlR73v5" role="30czhm" />
+                              </node>
+                            </node>
+                            <node concept="1QScDb" id="XcMVlR6V7x" role="30czhm">
+                              <node concept="3sQ2Ir" id="XcMVlR6X9T" role="1QScD9" />
+                              <node concept="1QScDb" id="XcMVlR6QZr" role="30czhm">
+                                <node concept="GRK4H" id="XcMVlR6T34" role="1QScD9">
+                                  <property role="2EMntL" value="existingBids" />
+                                </node>
+                                <node concept="_emDc" id="XcMVlR6OYV" role="30czhm">
+                                  <ref role="_emDf" node="5qVL_PWLWdM" resolve="tradeEnergy" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="30bsCy" id="XcMVlR9n3y" role="30dEs_">
+                  <node concept="30bsCy" id="XcMVlR9n3z" role="30bsDf">
+                    <node concept="30deu6" id="XcMVlR9n3$" role="30bsDf">
+                      <node concept="1QScDb" id="XcMVlR9n3A" role="30dEsF">
+                        <node concept="1QScDb" id="XcMVlR9n3B" role="30czhm">
+                          <node concept="_emDc" id="XcMVlR8qXR" role="30czhm">
+                            <ref role="_emDf" node="5qVL_PWLWdM" resolve="tradeEnergy" />
+                          </node>
+                          <node concept="GRK4H" id="XcMVlR8vis" role="1QScD9">
+                            <property role="2EMntL" value="first" />
+                          </node>
+                        </node>
+                        <node concept="3sQ2Ir" id="XcMVlR8zzr" role="1QScD9" />
+                      </node>
+                      <node concept="30czhn" id="XcMVlR9n3C" role="30dEs_">
+                        <node concept="1QScDb" id="XcMVlR9n3D" role="30czhm">
+                          <node concept="1QScDb" id="XcMVlR9n3E" role="30czhm">
+                            <node concept="_emDc" id="XcMVlR8BT0" role="30czhm">
+                              <ref role="_emDf" node="5qVL_PWLWdM" resolve="tradeEnergy" />
+                            </node>
+                            <node concept="GRK4H" id="XcMVlR8GhP" role="1QScD9">
+                              <property role="2EMntL" value="bids_processed" />
+                            </node>
+                          </node>
+                          <node concept="3sQ2Ir" id="XcMVlR8KIT" role="1QScD9" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1adzI2" id="XcMVlR77FR" role="1aduh9">
+              <ref role="1adwt6" node="XcMVlR5rns" resolve="test" />
+              <node concept="29jrl$" id="XcMVlR79MJ" role="lGtFl" />
+            </node>
+            <node concept="1QScDb" id="XcMVlQZzGO" role="1aduh9">
+              <node concept="174ZEm" id="XcMVlQZzGP" role="1QScD9">
+                <ref role="174ZEE" node="5qVL_PW_6L4" resolve="finishedBiding" />
+                <node concept="3C7svV" id="XcMVlQZzGQ" role="2Yl$dn" />
+                <node concept="3iBYfx" id="XcMVlQZzGR" role="2Yl$dn">
+                  <node concept="30bXRB" id="XcMVlQZzGS" role="3iBYfI">
+                    <property role="30bXRw" value="1" />
+                  </node>
+                  <node concept="30bXRB" id="XcMVlQZzGT" role="3iBYfI">
+                    <property role="30bXRw" value="2" />
+                  </node>
+                </node>
+              </node>
+              <node concept="_emDc" id="XcMVlQZzGU" role="30czhm">
+                <ref role="_emDf" node="5qVL_PWLWdM" resolve="tradeEnergy" />
+              </node>
+            </node>
+            <node concept="1QScDb" id="XcMVlQZzGV" role="1aduh9">
+              <node concept="174ZEm" id="XcMVlQZzGW" role="1QScD9">
+                <ref role="174ZEE" node="1nZAa4DuFck" resolve="finisheBidingTransition" />
+              </node>
+              <node concept="_emDc" id="XcMVlQZzGX" role="30czhm">
+                <ref role="_emDf" node="5qVL_PWLWdM" resolve="tradeEnergy" />
+              </node>
+            </node>
+            <node concept="1QScDb" id="XcMVlQZzGY" role="1aduh9">
+              <node concept="174ZEm" id="XcMVlQZzGZ" role="1QScD9">
+                <ref role="174ZEE" node="5qVL_PWrDly" resolve="buyEnergy" />
+              </node>
+              <node concept="_emDc" id="XcMVlQZzH0" role="30czhm">
+                <ref role="_emDf" node="5qVL_PWLWdM" resolve="tradeEnergy" />
+              </node>
+              <node concept="29jrl$" id="XcMVlQZzH1" role="lGtFl" />
+            </node>
+            <node concept="1QScDb" id="XcMVlQZzH2" role="1aduh9">
+              <node concept="_emDc" id="XcMVlQZzH3" role="30czhm">
+                <ref role="_emDf" node="5qVL_PWLWdM" resolve="tradeEnergy" />
+              </node>
+              <node concept="174ZEm" id="XcMVlQZzH4" role="1QScD9">
+                <ref role="174ZEE" node="1nZAa4DvooJ" resolve="buyTransitioning" />
+              </node>
+            </node>
+            <node concept="1QScDb" id="XcMVlQZzH5" role="1aduh9">
+              <node concept="2AijNT" id="XcMVlQZzH6" role="1QScD9">
+                <ref role="2AijNy" node="5qVL_PWydlV" resolve="finishedTrading" />
+              </node>
+              <node concept="_emDc" id="XcMVlQZzH7" role="30czhm">
+                <ref role="_emDf" node="5qVL_PWLWdM" resolve="tradeEnergy" />
+                <node concept="29jrl$" id="XcMVlQZzH8" role="lGtFl" />
+              </node>
+            </node>
+            <node concept="_emDc" id="XcMVlRcm0_" role="1aduh9">
+              <ref role="_emDf" node="5qVL_PWyRX2" resolve="sales" />
+              <node concept="29jrl$" id="XcMVlRcocC" role="lGtFl" />
+            </node>
+          </node>
+          <node concept="2zH6wq" id="XcMVlQZzGa" role="1aduh9" />
         </node>
       </node>
     </node>
