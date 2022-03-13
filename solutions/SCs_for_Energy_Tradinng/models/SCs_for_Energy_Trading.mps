@@ -1332,6 +1332,9 @@
       <node concept="174hPg" id="XcMVlRfW2s" role="17tHGx">
         <property role="TrG5h" value="ifToBid" />
       </node>
+      <node concept="174hPg" id="XcMVlRmwu6" role="17tHGx">
+        <property role="TrG5h" value="finishSelling" />
+      </node>
       <node concept="qdjUo" id="5qVL_PW_b0X" role="17tHGx">
         <node concept="1aga60" id="5qVL_PW_b0Z" role="qdjUt">
           <property role="TrG5h" value="giveBid" />
@@ -2643,6 +2646,14 @@
           </node>
           <node concept="1vQcaV" id="XcMVlRgAcV" role="1vQNHF">
             <ref role="1vQcaS" node="5qVL_PWMEDI" resolve="bids" />
+          </node>
+        </node>
+        <node concept="174hPn" id="XcMVlRnwsX" role="17rfIJ">
+          <node concept="2AuZ2C" id="XcMVlRn_aA" role="2AuZ2o">
+            <ref role="2AuZ2q" node="XcMVlRmwu6" resolve="finishSelling" />
+          </node>
+          <node concept="1vQcaV" id="XcMVlRnBlt" role="1vQNHF">
+            <ref role="1vQcaS" node="5qVL_PWydlV" resolve="finishedTrading" />
           </node>
         </node>
       </node>
@@ -4123,8 +4134,12 @@
                 <node concept="29jrl$" id="XcMVlQZzH8" role="lGtFl" />
               </node>
             </node>
+            <node concept="_emDc" id="XcMVlRoTwS" role="1aduh9">
+              <ref role="_emDf" node="3lQITeQntr6" resolve="offers" />
+              <node concept="29jrl$" id="XcMVlRp04B" role="lGtFl" />
+            </node>
             <node concept="_emDc" id="XcMVlRcm0_" role="1aduh9">
-              <ref role="_emDf" node="5qVL_PWyRX2" resolve="sales" />
+              <ref role="_emDf" node="3lQITeQpuTD" resolve="sales" />
               <node concept="29jrl$" id="XcMVlRcocC" role="lGtFl" />
             </node>
           </node>
